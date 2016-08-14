@@ -7,6 +7,9 @@
 # MongoDB data files
 data/
 
+# libs from bower
+wwwroot/lib/
+
 # User-specific files
 *.suo
 *.user
