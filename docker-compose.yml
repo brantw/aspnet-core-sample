@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  dotnet:
+    container_name: dotnet
+    build: .
+    ports: 
+      - 80:5000
+    links:
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db

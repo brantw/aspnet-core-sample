@@ -1,0 +1,32 @@
+@model System.Collections.Generic.List<ShoeStore.Models.Shoe>
+
+@{  
+    ViewData["Title"] = "Shoe Catalog";
+}
+
+<div class="container">
+    <h2>Shoe Catalog</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Gender</th>
+                <th>Size</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var shoe in Model)
+            {
+                <tr>
+                    <td>@shoe.Name</td>
+                    <td>@shoe.Brand</td>
+                    <td>@shoe.Gender</td>
+                    <td>@shoe.Size</td>
+                    <td>@shoe.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
