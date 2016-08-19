@@ -2,6 +2,8 @@
 
 Sample cross-platform ASP.NET Core application using [Docker](http://docker.com) and [MongoDB](http://mongodb.com).
 
+Download the [presentation slides](https://github.com/brantw/aspnet-core-sample/raw/master/Intro%20to%20.NET%20Core.pdf).
+
 ## Prereqs
 
 Before running the app you will need to install [Docker](https://www.docker.com/products/overview) and [Bower](https://bower.io/#install-bower).
